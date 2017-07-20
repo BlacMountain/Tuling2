@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_time"
+    android:gravity="center"/>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Layout_right">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:id="@+id/imageView_right"
+        android:src="@drawable/zhonghanlang"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_right"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/imageView_right"
+        android:background="@drawable/left"
+        android:gravity="center"/>
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+    android:id="@+id/Layout_left">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imageView_left"
+        android:src="@drawable/wuqilong"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_left"
+        android:layout_marginLeft="50dp"
+        android:layout_toLeftOf="@+id/imageView_left"
+        android:background="@drawable/right"
+        android:gravity="center"/>
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>
